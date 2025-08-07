@@ -1,1 +1,10 @@
-basic
+<!DOCTYPE html>
+<html>
+  <head><title>Tesla OAuth Callback</title></head>
+  <body>
+    <script>
+      const code = new URLSearchParams(window.location.search).get("code");
+      document.body.innerHTML = `<h2>OAuth Code:</h2><p>${code}</p>`;
+    </script>
+  </body>
+</html>
